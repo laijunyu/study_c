@@ -1,4 +1,4 @@
-#incluce <stdio.h>
+#include <stdio.h>
 int main(void)
 {
     float weight = 18.8;
