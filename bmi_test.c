@@ -1,8 +1,10 @@
 #include <stdio.h>
 int main(void)
 {
-    float weight = 18.8;
-    float high = 16.5;
+    float weight ;
+    float high ;
+    scanf_s("%f", &weight);
+    scanf_s("%f", &high);
     float bmi = weight / ( high * high);
     printf ("%f\n" , bmi);
     if (bmi < 18.5)
