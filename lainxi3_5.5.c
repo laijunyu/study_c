@@ -6,6 +6,7 @@ int main ()
     scanf("%f %f %f",&a ,&b ,&h);
     float s = (a+b)*h/2;
     printf("梯形的面积为%f",s);
+    return 0;
 
 
 }
