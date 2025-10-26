@@ -11,6 +11,6 @@ int main ()
     b++;
     printf("a=%d b=%d",a,b);
     n(a,b);
-    return 114514;
+    return 1919810;
     
 }
