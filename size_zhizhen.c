@@ -3,9 +3,10 @@ int main()
 {
     float in1,in2,sum;
     float *po ,*po2;
-    po = &in1 ,po2= &in2;
+    po = &in1 ;
+    po2= &in2;
     char c1;
-    scanf("%f,%c,%f",po,&c1,po2);
+    scanf("%f%c%f",po,&c1,po2);
     switch (c1)
     {
     case '+':
@@ -26,4 +27,5 @@ int main()
         break;
     }
     printf("%f",sum);
+    return 0;
 }
