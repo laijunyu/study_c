@@ -1,6 +1,30 @@
 #include <stdio.h>
 #include<stdlib.h>
 #include<time.h>
+float jia(float a,float b)
+{
+    float zong;
+    zong =a+b;
+    return zong;
+}
+float jian(float a ,float b)
+{
+    float zong;
+    zong = a - b;
+    return zong;
+}
+float cheng (float a,float b)
+{
+    float zong;
+    zong = a * b;
+    return zong;
+}
+float chu (float a, float b)
+{
+    float zong;
+    zong = a / b;
+    return zong;
+}
 
 int caizi ()
 {
@@ -66,7 +90,20 @@ int jisuan()
 }
 int main()
 {
+    int selct;
     printf("��������Ҫ���еĳ���\n1.������Ϸ\n2.");
-    caizi();
+    scanf(%d,&selct);
+    switch (selct)
+    {
+    case 1:caizi();
+        /* code */
+        break;
+    case 2:jisuan();
+        break;
+    
+    default:
+        printf("shurucuowuqinggchongxingshuru");
+        break;
+    }
     return 0;
 }
