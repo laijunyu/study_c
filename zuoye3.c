@@ -92,7 +92,7 @@ int main()
 {
     int selct;
     printf("��������Ҫ���еĳ���\n1.������Ϸ\n2.");
-    scanf(%d,&selct);
+    scanf("%d",&selct);
     switch (selct)
     {
     case 1:caizi();
