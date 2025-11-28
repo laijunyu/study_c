@@ -33,6 +33,7 @@ int caizi ()
 
     int num = rand() % 10;
     int num2,ci;
+    ci =10;
 
     printf("qingshurucaizi:");
     while(1)
@@ -40,31 +41,31 @@ int caizi ()
         
         scanf("%d",&num2);
         if(num == num2){
-            printf("caiduile");
+            printf("猜对了");
             break;
             
         }
         else if (num < num2)
         {
-            printf("caicuola\n caidale\nqingcongxingshuru:");
+            printf("猜错了\n 猜大了\n请重新输入:");
             /* code */
         }
         else if (num >num2)
         {
-            printf("caicuola\ncaixiaole\nqingcongxingshuru");
+            printf("猜错了\n猜小了\n请重新输入");
             /* code */
         }
         ci--;
-        printf("ninghaiyou%dcijihui\n",ci);
+        printf("您还有%d次机会\n",ci);
         if(ci==0){
-        	printf("shubai") ;
+        	printf("失败了") ;
         	break;
         }
     }
 }
 int jisuan()
 {
-    printf("qingshuru\n");
+    printf("请输入\n");
     float num1 ,num2;
     char hao;
     scanf("%f%c%f",&num1,&hao,&num2);
@@ -85,13 +86,13 @@ int jisuan()
     sum = chu(num1,num2);
     break;
     }
-    printf ("%f %c %f jieguowei %f",num1,hao,num2,sum);
+    printf ("%f %c %f 的结果为 %f",num1,hao,num2,sum);
     return 0;
 }
 int main()
 {
     int selct;
-    printf("��������Ҫ���еĳ���\n1.������Ϸ\n2.");
+    printf("请输入想运行的程序序号1.猜字游戏2.计算器");
     scanf("%d",&selct);
     switch (selct)
     {
@@ -102,7 +103,7 @@ int main()
         break;
     
     default:
-        printf("shurucuowuqinggchongxingshuru");
+        printf("输入有误");
         break;
     }
     return 0;
